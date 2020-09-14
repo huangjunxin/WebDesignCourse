@@ -1,0 +1,24 @@
+body {
+	min-height: 0px;
+	background-image: url(../Image/main_p1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	/*主页背景图片动画*/
+	animation: change 30s infinite linear;
+	-moz-animation: change 30s infinite linear;
+	-webkit-animation: change 30s infinite linear;
+	-o-animation: change 30s infinite linear;
+}
+
+.jumbotron {
+	background-color: rgba(238, 238, 238, 0.7);
+}
+
+/*主页背景图片动画*/
+@keyframes change {
+	0% {background-image: url(../Image/main_p1.jpg);}
+	45% {background-image: url(../Image/main_p1.jpg);}
+	50% {background-image: url(../Image/main_p2.jpg);}
+	95% {background-image: url(../Image/main_p2.jpg);}
+	100% {background-image: url(../Image/main_p1.jpg);}
+}

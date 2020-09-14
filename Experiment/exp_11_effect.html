@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实验11</title>
+		<style>
+			body>div {
+				width: 669px;
+				height: 245px;
+				background-image: url(exp_11_effect_1.jpg);
+				background-repeat: no-repeat;
+				position: relative;
+				border: black solid 1px;
+
+				animation: change 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-moz-animation: change 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-webkit-animation: change 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-o-animation: change 16s infinite cubic-bezier(.215, .61, .355, 1);
+			}
+
+			span {
+				width: 2em;
+				height: 2em;
+				display: inline-block;
+				text-align: center;
+				line-height: 2em;
+				margin-left: 1em;
+				border: rgb(113, 197, 244) solid 1px;
+				color: rgb(113, 197, 244);
+
+			}
+
+			body>div>div {
+				width: 14em;
+				text-align: center;
+				position: absolute;
+				top: 203px;
+				right: 10px;
+			}
+
+			#s1 {
+				animation: s1 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-moz-animation: s1 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-webkit-animation: s1 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-o-animation: s1 16s infinite cubic-bezier(.215, .61, .355, 1);
+			}
+
+			#s2 {
+				animation: s2 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-moz-animation: s2 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-webkit-animation: s2 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-o-animation: s2 16s infinite cubic-bezier(.215, .61, .355, 1);
+			}
+
+			#s3 {
+				animation: s3 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-moz-animation: s3 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-webkit-animation: s3 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-o-animation: s3 16s infinite cubic-bezier(.215, .61, .355, 1);
+			}
+
+			#s4 {
+				animation: s4 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-moz-animation: s4 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-webkit-animation: s4 16s infinite cubic-bezier(.215, .61, .355, 1);
+				-o-animation: s4 16s infinite cubic-bezier(.215, .61, .355, 1);
+			}
+
+			@keyframes change {
+				0% {
+					background-image: url(exp_11_effect_1.jpg);
+				}
+
+				25% {
+					background-image: url(exp_11_effect_2.jpg);
+				}
+
+				50% {
+					background-image: url(exp_11_effect_3.jpg);
+				}
+
+				75% {
+					background-image: url(exp_11_effect_3.jpg);
+				}
+
+				100% {
+					background-image: url(exp_11_effect_1.jpg);
+				}
+			}
+
+			@keyframes s1 {
+
+				0%,
+				100% {
+					background-color: rgb(113, 197, 244);
+					color: rgb(255, 255, 255);
+				}
+
+				25%,
+				50%,
+				75% {
+					background-color: rgb(255, 255, 255);
+					color: rgb(113, 197, 244);
+				}
+			}
+
+			@keyframes s2 {
+				25% {
+					background-color: rgb(113, 197, 244);
+					color: rgb(255, 255, 255);
+				}
+
+				0%,
+				50%,
+				75%,
+				100% {
+					background-color: rgb(255, 255, 255);
+					color: rgb(113, 197, 244);
+				}
+			}
+
+			@keyframes s3 {
+				50% {
+					background-color: rgb(113, 197, 244);
+					color: rgb(255, 255, 255);
+				}
+
+				0%,
+				25%,
+				75%,
+				100% {
+					background-color: rgb(255, 255, 255);
+					color: rgb(113, 197, 244);
+				}
+			}
+
+			@keyframes s4 {
+				75% {
+					background-color: rgb(113, 197, 244);
+					color: rgb(255, 255, 255);
+				}
+
+				0%,
+				25%,
+				50%,
+				100% {
+					background-color: rgb(255, 255, 255);
+					color: rgb(113, 197, 244);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>
+				<span id="s1"><strong>1</strong></span>
+				<span id="s2"><strong>2</strong></span>
+				<span id="s3"><strong>3</strong></span>
+				<span id="s4"><strong>4</strong></span>
+			</div>
+		</div>
+	</body>
+</html>

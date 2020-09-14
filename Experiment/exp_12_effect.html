@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>实验12</title>
+		<style type="text/css">
+			body {
+				padding: 0px;
+				margin: 0px;
+			}
+
+			div {
+				background-color: #000000;
+				width: 308px;
+				height: 100px;
+				line-height: 100px;
+				color: #FFFFFF;
+				font-size: 50px;
+				border: #903 medium double;
+				padding: 0px;
+				position: relative;
+			}
+
+			section {
+				top: 0px;
+				background-color: #FFFFFF;
+				z-index: 2;
+				height: 200px;
+				width: 700px;
+				position: absolute;
+				left: 310px;
+			}
+
+			ul {
+				list-style-type: none;
+				padding: 0px;
+				width: 618px;
+				position: absolute;
+				top: -50px;
+				height: 100px;
+				animation: roll 4s infinite cubic-bezier(0, 0, 1, 1);
+				-moz-animation: roll 4s infinite cubic-bezier(0, 0, 1, 1);
+				-webkit-animation: roll 4s infinite cubic-bezier(0, 0, 1, 1);
+				-o-animation: roll 4s infinite cubic-bezier(0, 0, 1, 1);
+			}
+
+			@keyframes roll {
+				0% {
+					left: 0px;
+				}
+
+				100% {
+					left: -300px;
+				}
+			}
+
+			li {
+				width: 100px;
+				line-height: 100px;
+				margin-left: 0px;
+				text-align: center;
+				border: #CCCCCC thin solid;
+				color: #990033;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<section></section>
+	</body>
+</html>

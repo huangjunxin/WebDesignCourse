@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>第6次实验</title>
+	</head>
+
+	<body>
+		<h3 align="center">用户信息调查表</h3>
+		<table width="770" height="371" border="3" align="center" cellpadding="10" cellspacing="0">
+			<form action="mailto:xxyy@163.com" method="post" name="form1" enctype="text/plain">
+				<tr>
+					<td>
+						用户名：<input type="text" name="username" size="8">
+					</td>
+					<td>
+						密码：<input type="password" name="password" size="8">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						性别：
+						<input type="radio" name="sex" value="man">男
+						<input type="radio" name="sex" value="woman">女
+					</td>
+					<td>
+						籍贯：
+						<select name="place">
+							<option value="gd">广东</option>
+							<option value="sc">四川</option>
+							<option value="gz">贵州</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						政治面貌：<br>
+						<select name="face" size="4">
+							<option value="dy">党员</option>
+							<option value="mzdp">民主党派</option>
+							<option value="ty">团员</option>
+							<option value="qz">群众</option>
+						</select>
+					</td>
+					<td>
+						誓言：<br>
+						<textarea name="speak"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">相片：<input type="file"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input type="submit" value="提交"><input type="reset" value="重置">
+					</td>
+				</tr>
+			</form>
+		</table>
+	</body>
+</html>

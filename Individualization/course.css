@@ -1,0 +1,21 @@
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 0px;
+	height: 100%;
+	/*禁止纵向滚动*/
+	overflow-y: hidden;
+}
+
+body>.container {
+	height: 100%;
+}
+
+iframe {
+	position: relative;
+	top: -20px;
+	height: calc(100% + 20px);
+	width: 100%;
+}

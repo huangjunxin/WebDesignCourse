@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>实验10 下拉菜单</title>
+		<style type="text/css">
+			body {
+				background-color: #E7E8E9;
+			}
+
+			nav {
+				/*设置导航栏的属性*/
+				background-color: rgb(34, 79, 134);
+				height: 60px;
+				color: #FFF;
+				font-family: "楷体";
+				font-size: 20px;
+				line-height: 60px;
+			}
+
+			ul {
+				/*设置所有ul的属性*/
+				list-style-type: none;
+				width: 80%;
+			}
+
+			nav>ul {
+				/*设置导航栏的ul的属性*/
+				margin: 0 auto;
+				height: 60px;
+			}
+
+			nav>ul>li {
+				/*设置导航栏的li的属性*/
+				width: 100px;
+				margin-right: 180px;
+				float: left;
+				position: relative;
+				text-align: center;
+			}
+
+			nav>ul>li>ul {
+				/*设置下拉菜单的ul的属性*/
+				display: none;
+				height: auto;
+				width: 100px;
+				position: absolute;
+				background-color: rgb(34, 79, 134);
+				padding: 0;
+				/*用于去除多余的内边框宽度*/
+			}
+
+			nav>ul>li>ul>li {
+				/*设置下拉菜单的li的属性*/
+				text-align: center;
+				width: 100px;
+				border: #CCC solid 1px;
+				border-top-style: none;
+				border-left-style: none;
+				border-right-style: none;
+			}
+
+			li:hover {
+				background-color: rgb(43, 95, 152);
+				/*所有的li在鼠标悬停时，背景颜色都改变*/
+			}
+
+			li:hover ul {
+				display: block;
+			}
+
+			a:link {
+				text-decoration: none;
+				/*取消下划线*/
+				color: #FFF;
+			}
+
+			a:visited {
+				color: #FFF;
+			}
+
+			a:hover {
+				color: rgb(173, 255, 97);
+			}
+
+			nav>ul>li>ul>li:hover a {
+				color: rgb(173, 255, 97);
+				/*仅仅是在下拉菜单的li才会变绿色*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<nav>
+			<ul>
+				<li>学院概况
+					<ul>
+						<li>教学管理</li>
+						<li><a href="http://cs.hzu.edu.cn/zyjs/list.htm" target="_blank">专业介绍</a></li>
+						<li>课程设置</li>
+						<li>规章制度</li>
+					</ul>
+				</li>
+				<li>教学管理
+					<ul>
+						<li>协同创新</li>
+						<li>学科竞赛</li>
+						<li>学生创客</li>
+					</ul>
+				</li>
+				<li>创新创业
+					<ul>
+						<li>国际交流</li>
+						<li>科研方向</li>
+						<li>科研成果</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</body>
+</html>

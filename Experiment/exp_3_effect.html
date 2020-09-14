@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>惠州学院</title>
+	</head>
+	<style>
+		/*使用CSS实现列表*/
+		ul.a {
+			list-style:disc;
+		}
+		
+		ul.b {
+			list-style:circle;
+		}
+		/*使用CSS伪类更改超文本链接的默认颜色与下划线（故意的）*/
+		a:link {
+			color: #000; text-decoration: none
+		}
+		
+		a:visited {
+			color: #000; text-decoration: none
+		}
+		/*使用CSS+div划分页面*/
+		/*列表居中块*/
+		.Center_List {
+			margin: 0 auto;
+			/*设置块位置信息*/
+			position: absolute;
+			height: 200px;
+			left: calc(50% - 150px);
+			/*设置字体与字号*/
+			font-family:楷体;
+			font-size: 20px;
+		}
+		/*标题块*/
+		.Title {
+			/*设置块位置信息*/
+			position:absolute;
+			left: calc(50% - 40px);
+			top: 30px;
+			hight:100px;
+			width:300px;
+			/*设置字体与字号*/
+			font-family:华文行楷;
+			font-size:40px;
+		}
+	</style>
+
+	<body>
+		<!--下文多处使用超文本链接，分别链接到相应网站-->
+		<div class="Center_List">
+			<a href="https://www.hzu.edu.cn/" target="_blank"><img src="exp_3_effect.png" width="100"></a>
+			<div class="Title">
+				<strong><a href="https://www.hzu.edu.cn/" target="_blank">惠州学院</a></strong>
+			</div>
+			<ul>
+				<!--此处采用CSS实现列表-->
+				<li class="a">教学单位</li>
+				<ul class="b">
+					<li><a href="http://ee.hzu.edu.cn/" target="_blank">电子信息与电气工程学院</a></li>
+					<li><a href="http://tour.hzu.edu.cn/" target="_blank">地理与旅游学院</a></li>
+					<li><a href="http://cs.hzu.edu.cn/" target="_blank">信息科学技术学院</a></li>
+					<li><a href="http://music.hzu.edu.cn/" target="_blank">音乐学院</a></li>
+				</ul>
+				<!--此处采用html实现列表-->
+				<li type="disc">教辅单位</li>
+				<ul type="circle">
+					<li><a href="http://hzu.fanya.chaoxing.com/portal" target="_blank">网络中心</a></li>
+					<li><a href="http://etc.hzu.edu.cn/" target="_blank">教育技术中心</a></li>
+				</ul>
+			</ul>
+		</div>
+	</body>
+</html>

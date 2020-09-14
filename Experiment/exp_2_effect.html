@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>唐诗</title>
+	</head>
+	<style>
+		/*使用CSS插入背景图，属性为只显示一次*/
+		body {
+			background: url(exp_2_effect.jpg) no-repeat;
+		}
+
+		/*使用CSS+div划分页面*/
+		/*古诗原文居中块*/
+		.Vertical_Text1 {
+			margin: 0 auto;
+			/*设置块位置信息*/
+			height: 260px;
+			position: absolute;
+			left: calc(50% - 170px);
+			/*使用CSS3实现文字竖排格式*/
+			writing-mode: vertical-rl;
+			/*兼容IE7*/
+			writing-mode: tb-rl;
+			/*设置字体与字号*/
+			font-size: 24px;
+			font-family: 仿宋;
+		}
+
+		/*古诗翻译居中块*/
+		.Vertical_Text2 {
+			margin: 0 auto;
+			/*设置块位置信息*/
+			height: 340px;
+			position: absolute;
+			left: calc(50% - 160px);
+			top: 260px;
+			/*使用CSS3实现文字竖排格式*/
+			writing-mode: vertical-rl;
+			/*兼容IE7*/
+			writing-mode: tb-rl;
+			/*设置字体与字号*/
+			font-size: 24px;
+			font-family: 仿宋;
+		}
+	</style>
+	<body>
+		<div class="Vertical_Text1">
+			<p align="center">
+				<strong>詠懷古蹟其二</strong><br>
+				唐　杜甫<br>
+				搖落深知宋玉悲<br>
+				風流儒雅亦吾師<br>
+				悵望千秋一洒淚<br>
+				蕭條異代不同時<br>
+				江山故宅空文藻<br>
+				雲雨荒台豈夢思<br>
+				最是楚宮俱泯滅<br>
+				舟人指點到今疑</p>
+		</div>
+		<div class="Vertical_Text2">
+			<p>
+				<strong>譯文</strong><br>
+				默誦草木搖落深知宋玉為何悲秋<br>
+				他學問淵博文辭精采算是我老師<br>
+				相隔千秋追懷悵望叫人不免流涕<br>
+				索寞蕭條我和他相似卻生非同時<br>
+				江山猶在故宅仍存只有文采空留<br>
+				他的雲雨樓台豈是說夢而無諷意<br>
+				最可感慨的是當年楚宮早已泯滅<br>
+				至今船夫還帶疑地指點這些古蹟<br></p>
+	</body>
+</html>
